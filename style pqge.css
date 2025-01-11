@@ -1,0 +1,538 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #e8f5e9; /* Gris clair */
+}
+.row h1 {
+    font-size: 24px;
+    color: #2e7d32;
+}
+
+.btn-login{
+    padding: 8px 15px;
+            background: #2e7d32;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 14px;
+            transition: backround 0.3s;
+}
+.btn-login:hover {
+    background: #1b5e20;
+}
+
+
+section{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+section nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px #089da1;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    z-index: 100;
+}
+
+section nav .logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+section nav li a{
+    text-decoration: none;
+    color: #000;
+}
+
+section nav li a:hover{
+    color: #089da1;
+}
+
+section nav .social_icon i{
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+section nav .social_icon i:hover{
+    color: #089da1;
+    cursor: pointer;
+}
+
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 10%;
+}
+
+section .main h1{
+    position: relative;
+    font-size: 55px;
+    top: 80px;
+    left: 25px;
+}
+
+section .main h1 span{
+    color: #089da1;
+}
+
+section .main p{
+    width: 650px;
+    text-align: justify;
+    line-height: 22px;
+    position: relative;
+    top: 125px;
+    left: 25px;
+}
+
+section .main .main_tag .main_btn{
+    background: #089da1;
+    padding: 10px 20px;
+    position: relative;
+    top: 200px;
+    left: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+section .main .main_img img{
+    width: 780px;
+    position: relative;
+    top: 90px;
+    left: 20px;
+}
+.image-container {
+    position: relative;
+    top: -50px;
+    width: 100%;
+    height: 700px; /* Ajustez la hauteur en fonction de vos images */
+    overflow: hidden;
+    
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.8s ease;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 30%;
+    height: 50%;
+    background: rgba(255, 255, 255, 0.5); /* Fond flou de l'image */
+    backdrop-filter: blur(50px); /* Effet de flou */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Ajout d'une ombre */
+     border-top-left-radius: 10px; /* Coins arrondis pour l'overlay */
+    border-bottom-left-radius: 10px; /* Coins arrondis pour l'overlay */
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+
+  .text {
+    color: black;
+    font-size: 20px;
+  }
+
+
+    
+    .header-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;}
+
+
+
+
+
+
+.featured_boks{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+}
+
+.featured_boks h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 45px;
+}
+
+.transparent-text {
+    display: block; /* S'assure que le texte est sur une nouvelle ligne */
+    font-size: 30px; /* Taille du texte augmentée */
+    font-family: 'Georgia', serif; /* Change la police à Georgia ou police par défaut avec empattement */
+    font-weight: bold; /* Texte en gras */
+    font-style: italic; /* Texte en italique */
+    color: rgba(0, 0, 0, 0.1); /* Texte transparent (opacité 10%) */
+    text-align: center; /* Centre le texte sous le bouton */
+    margin-top: 18px; /* Espace entre "Learn More" et "Roman" */
+}
+
+
+
+.featured_boks .featured_book_box {
+    width: 95%;
+    height: 80vh; /* Augmenter la hauteur à 80% de la hauteur de la fenêtre */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+
+.featured_boks .featured_book_box .featured_book_card{
+    width: 250px;
+    height: 420px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #919191;
+    margin: auto 20px;
+}
+
+
+.featured_boks .featured_book_box .featured_book_card:hover{
+    box-shadow: 0 0 5px #089da1;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_img img{
+    width: 150px;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag h2{
+    margin: 12px;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .writer{
+    color: #919191;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .categories{
+    color: #089da1;
+    margin-top: 8px;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .book_price{
+    margin-top: 8px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .book_price sub{
+    font-weight: 100;
+    padding: 0 5px;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .f_btn{
+    padding: 8px 20px;
+    border: 2px solid #089da1;
+    text-decoration: none;
+    color: #000;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #089da1;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+.arrivals{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 35px;
+}
+
+.arrivals h1{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.arrivals .arrivals_box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 25px 0;
+}
+
+.arrivals .arrivals_box .arrivals_card{
+    width: 250px;
+    height: 340px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #919191;
+    margin: auto 20px;
+}
+
+.arrivals .arrivals_box .arrivals_card:hover{
+    box-shadow: 0 0 5px #089da1;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_image{
+    width: 150px;
+    height: 220px;
+    margin: 0 auto;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.arrivals .arrivals_box .arrivals_card:hover .arrivals_image img{
+    transform: scale(1.1);
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag p{
+    font-family: queen of camelot;
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag .arrivals_icon{
+    color: #FF8C00;
+    margin-bottom: 18px;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag .arrivals_btn{
+    padding: 8px 20px;
+    border: 2px solid #089da1;
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.blog{
+    width: 100%;
+    height: auto;
+    margin: 25px 0;
+}
+
+.blog h1{
+    text-align: center;
+    font-size: 50px;
+    margin-top:200px;
+    margin-bottom: 30px;
+}
+
+.blog .blog_box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.blog .blog_box .blog_card{
+    margin: 0 auto;
+    width: 450px;
+    height: auto;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+
+.blog .blog_box .blog_card .blog_img{
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.blog .blog_box .blog_card .blog_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog .blog_box .blog_card .blog_tag{
+    padding: 50px;
+}
+
+.blog .blog_box .blog_card .blog_tag h2{
+    color: #089da1;
+}
+
+.blog .blog_box .blog_card .blog_tag p{
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 22px;
+    margin-left 10px;
+}
+
+.blog .blog_box .blog_card .blog_tag .blog_icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #089da1;
+    cursor: pointer;
+}
+
+
+
+
+
+
+footer{
+    width: 100%;
+    background: #eaeaea;
+}
+
+footer .footer_main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer_main .tag{
+    margin: 10px 0;
+}
+
+footer .footer_main .tag img{
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+footer .footer_main .tag p{
+    width: 250px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+footer .footer_main .tag h1{
+    font-size: 25px;
+    margin: 25px 0;
+    color: #000;
+}
+
+footer .footer_main .tag a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+footer .footer_main .tag i{
+    margin-right: 10px;
+}
+
+footer .footer_main .tag .social_link i{
+    margin: 0 5px;
+}
+
+footer .footer_main .tag .search_bar{
+    width: 230px;
+    height: 30px;
+    background: rgba(202,202,202);
+    border-radius: 25px;
+}
+
+footer .footer_main .tag .search_bar input{
+    width: 200px;
+    padding: 2px 0;
+    position: relative;
+    top: 17%;
+    left: 6%;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    background: none;
+}
+
+footer .footer_main .tag .search_bar button{
+    padding: 7px 15px;
+    background: #089da1;
+    border: none;
+    margin-top: 15px;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    color: #000;
+}
+
+footer .end span{
+    color: #089da1;
+    margin-left: 10px;
+}
+.heart-icon{
+            position: absolute;
+           margin-right: 0;
+           margin-bottom:5px;
+            font-size: 20px;
+            color:#EE1C47;
+        }
+        .heart-icon:hover{
+            color: #EE1C47;
+        }
